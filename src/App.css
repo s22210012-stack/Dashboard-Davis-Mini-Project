@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* 🔥 TITLE DIPERBAIKI */
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+
+  /* GRADIENT TEXT */
+  background: linear-gradient(90deg, #000000, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  letter-spacing: 1px;
+  position: relative;
+}
+
+/* GARIS BAWAH ESTETIK */
+.title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 10px auto 0;
+
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  border-radius: 10px;
+}
+
+/* KPI */
+.kpi-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.kpi-card {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+
+  background: #ffffff;
+  border-radius: 12px;
+
+  border: 2px solid #007bff;
+
+  box-shadow: 
+    0 6px 15px rgba(0, 0, 0, 0.15);
+
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.kpi-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 10px 25px rgba(0, 0, 0, 0.25),
+    0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+.kpi-title {
+  font-size: 16px;
+  color: #555;
+}
+
+.kpi-value {
+  font-size: 28px;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 10px;
+}
+
+/* CHART */
+.chart-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.chart-card {
+  width: 45%;
+  min-width: 350px;
+  max-width: 600px;
+
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+
+  border: 1px solid rgba(0,0,0,0.1);
+
+  box-shadow: 
+    0 6px 18px rgba(0,0,0,0.2),
+    0 0 10px rgba(0,123,255,0.1);
+
+  transition: all 0.3s ease;
+}
+
+.chart-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 10px 25px rgba(0,0,0,0.3),
+    0 0 15px rgba(0,123,255,0.2);
+}
+
+.chart-card h3,
+.chart-card p {
+  text-align: center;
+}
+
+.chart-card svg {
+  display: block;
+  margin: auto;
+}
+
+/* TABLE */
+.table-container {
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+
+  border: 1px solid rgba(0,0,0,0.08);
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+}
+
+td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* 🔥 KHUSUS LINE CHART FULL LEBAR */
+.line-chart {
+  width: 100% !important;
+  max-width: 100% !important;
+}
