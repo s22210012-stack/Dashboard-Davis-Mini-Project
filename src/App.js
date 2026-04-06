@@ -158,16 +158,12 @@ function App() {
                 ))}
               </Pie>
 
-              {/* 🔥 FIX TOOLTIP */}
-              <Tooltip
-                formatter={(value) => [`${value}`, "Tiket"]}
-                cursor={{ fill: "transparent" }}
-                contentStyle={{
-                  borderRadius: "10px",
-                  border: "1px solid #ddd",
-                  backgroundColor: "#fff"
-                }}
-              />
+              <Tooltip 
+  formatter={(value, name, props) => [
+    "",
+    props.payload.name
+  ]}
+/>
             </PieChart>
           </ResponsiveContainer>
         </div>
